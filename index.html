@@ -11,128 +11,286 @@
 </head>
 <body>
   <nav class="nav">
-    <a href="#hero" class="nav-link">Home</a>
+    <a href="#lilworld" class="nav-link">Home</a>
     <a href="#about" class="nav-link">About</a>
-    <a href="#experience" class="nav-link">Experience</a>
-    <a href="#projects" class="nav-link">Projects</a>
-    <a href="#education" class="nav-link">Education</a>
+    <a href="#explore" class="nav-link">Explore</a>
     <a href="#contact" class="nav-link">Contact</a>
   </nav>
 
   <main>
-    <section id="hero" class="section hero">
-      <div class="map-pin map-pin--hero" data-location="Summy" aria-hidden="true"></div>
-      <h1 class="hero-title">PORTFOLIO</h1>
-      <p class="hero-subtitle">Sumaiya Hossain</p>
-      <div class="sticky-note sticky-note--hero">
-        <span>Call me Summy!</span>
+    <section id="lilworld" class="section lilworld">
+      <div class="lilworld-inner">
+        <div class="lilworld-postcard">
+          <div class="lilworld-postcard-stamp" aria-hidden="true">TRAVEL STAMP<br>09 00 47 28</div>
+          <h2 class="lilworld-title">POSTCARD</h2>
+          <p class="lilworld-subtitle">Summy's Lil World</p>
+          <p class="lilworld-note">Welcome to Summy's lil world. I love lil whimsy websites, so I hope you enjoy my lil creations.</p>
+          <div class="lilworld-seal" aria-hidden="true"></div>
+        </div>
+        <div class="lilworld-polaroids">
+          <div class="lilworld-polaroid polaroid-placeholder" data-polaroid="1">
+            <img src="assets/polaroid1.png" alt="Bouldering" loading="lazy">
+            <div class="polaroid-placeholder-inner"><span>Your photo</span></div>
+          </div>
+          <div class="lilworld-polaroid polaroid-placeholder" data-polaroid="2">
+            <img src="assets/polaroid2.png" alt="Event with Snowflake mascot" loading="lazy">
+            <div class="polaroid-placeholder-inner"><span>Your photo</span></div>
+          </div>
+          <div class="lilworld-polaroid polaroid-placeholder" data-polaroid="3">
+            <img src="assets/polaroid3.png" alt="Travel, pyramid" loading="lazy">
+            <div class="polaroid-placeholder-inner"><span>Your photo</span></div>
+          </div>
+          <div class="lilworld-polaroid polaroid-placeholder" data-polaroid="4">
+            <img src="assets/polaroid4.png" alt="Trophy with friends" loading="lazy">
+            <div class="polaroid-placeholder-inner"><span>Your photo</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="about" class="section about">
-      <h2 class="section-title">who i am</h2>
-      <div class="about-content">
-        <p class="about-intro">Hi, I'm <strong>Sumaiya</strong> — call me <strong>Summy</strong>! I grew up in Portugal and moved to the UK. I love building things that mix hardware, software, community, and a bit of mischief.</p>
-        <div class="about-stickies">
-          <div class="sticky-note sticky-note--small" data-note="Portugal">Portugal</div>
-          <div class="sticky-note sticky-note--small" data-note="UK">UK</div>
-          <div class="sticky-note sticky-note--small" data-note="Engineering & fun">Engineering & fun</div>
+      <div class="about-bg-journey" aria-hidden="true">
+        <svg class="about-bg-svg" viewBox="0 0 400 180" preserveAspectRatio="xMidYMid meet">
+          <path class="about-bg-path" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 10" d="M -15 90 Q 40 120 95 90 Q 150 60 205 90 Q 260 120 315 90 Q 370 60 415 90"/>
+          <g class="about-bg-pin" transform="translate(95, 90)">
+            <path fill="#f472b6" stroke="#1a1a1a" stroke-width="1.2" d="M 0 0 L -6 -18 Q 0 -28 6 -18 Z"/>
+            <circle cx="0" cy="-10" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+          </g>
+          <g class="about-bg-pin" transform="translate(305, 90)">
+            <path fill="#f472b6" stroke="#1a1a1a" stroke-width="1.2" d="M 0 0 L -6 -18 Q 0 -28 6 -18 Z"/>
+            <circle cx="0" cy="-10" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+          </g>
+        </svg>
+      </div>
+      <h2 class="section-title about-page-title">About ME</h2>
+      <div class="about-journey">
+        <div class="about-box about-box--portugal" data-about-card>
+          <div class="about-box-tape about-box-tape--blue" aria-hidden="true"></div>
+          <button type="button" class="about-box-pic about-box-pic-btn" aria-label="Open full size">
+            <img src="assets/portugal-memories.png" alt="Summy's memories, Lisbon, Portugal">
+          </button>
+          <span class="about-box-label">Portugal</span>
+          <p class="about-box-text">Grew up here, where my story began.</p>
+        </div>
+        <div class="about-box about-box--uk" data-about-card>
+          <div class="about-box-tape about-box-tape--pink" aria-hidden="true"></div>
+          <button type="button" class="about-box-pic about-box-pic-btn" aria-label="Open full size">
+            <img src="assets/uk-memories.png" alt="Summy's memories, Liverpool, UK">
+          </button>
+          <span class="about-box-label">UK</span>
+          <p class="about-box-text">Live here now, building & exploring.</p>
         </div>
       </div>
-      <div class="map-pin" data-location="Portugal"></div>
-      <div class="map-pin map-pin--uk" data-location="UK"></div>
+      <p class="about-intro">Hi, I'm <strong>Sumaiya</strong>, call me <strong>Summy</strong>! I love building things that mix hardware, software, community, and a bit of mischief.</p>
     </section>
 
-    <section id="experience" class="section experience">
-      <h2 class="section-title">experience</h2>
-      <div class="cards">
-        <article class="card card--experience">
-          <div class="map-pin" data-location="Liverpool"></div>
-          <div class="tape tape--top-right"></div>
-          <div class="card-inner">
-            <h3 class="card-title">Building Froppy</h3>
-            <p class="card-meta">Dec 2024 – Jun 2025 · 7 mos · Liverpool</p>
-            <p class="card-desc">Hosted Pilates events during my final year of Uni.</p>
-            <ul class="card-list">
-              <li>Partnered with brands + cafés</li>
-              <li>Partnered with Refugee Women + raised money</li>
-              <li>Built a female community of 200+ people</li>
-            </ul>
-            <div class="sticky-note sticky-note--inline">Kendu fitness app — little side quest</div>
-            <div class="card-photo polaroid">
-              <img src="assets/IMG_6830.jpeg" alt="Froppy Pilates community" loading="lazy">
+    <section id="explore" class="section explore">
+      <h2 class="section-title">files</h2>
+      <p class="explore-intro">Click a category to open it, then click an item to read more.</p>
+      <div class="category-grid" role="tablist" aria-label="Portfolio categories">
+        <button type="button" class="category-card category-card--fitness" data-category="fitness" role="tab" aria-selected="false" aria-controls="panel-fitness" id="tab-fitness">
+          <span class="category-card-icons" aria-hidden="true"></span>
+          <span class="category-card-label">Fitness + fun</span>
+        </button>
+        <button type="button" class="category-card category-card--hardware" data-category="hardware" role="tab" aria-selected="false" aria-controls="panel-hardware" id="tab-hardware">
+          <span class="category-card-icons" aria-hidden="true"></span>
+          <span class="category-card-label">Hardware</span>
+        </button>
+        <button type="button" class="category-card category-card--tech" data-category="tech" role="tab" aria-selected="false" aria-controls="panel-tech" id="tab-tech">
+          <span class="category-card-icons" aria-hidden="true"></span>
+          <span class="category-card-label">Tech</span>
+        </button>
+        <button type="button" class="category-card category-card--education" data-category="education" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education">
+          <span class="category-card-icons" aria-hidden="true"></span>
+          <span class="category-card-label">Education</span>
+        </button>
+      </div>
+
+      <div id="panel-fitness" class="category-panel" role="tabpanel" aria-labelledby="tab-fitness" hidden>
+        <div class="category-panel-header">
+          <h3 class="category-panel-title">Fitness + fun</h3>
+          <button type="button" class="category-panel-back" aria-label="Back to categories">Back</button>
+        </div>
+        <div class="entry-list">
+          <article class="entry-card is-open" data-entry>
+            <button type="button" class="entry-head" aria-expanded="true" aria-controls="entry-kendu-body">
+              <span class="map-pin entry-pin" data-location="London"></span>
+              <span class="entry-title">Kendu</span>
+              <span class="entry-meta">Jan 2026 – present · London</span>
+            </button>
+            <div id="entry-kendu-body" class="entry-body" aria-hidden="false">
+              <div class="entry-body-text">
+                <div class="tape tape--top-right"></div>
+                <div class="sticky-note sticky-note--badge">Regional London winners, Princeton University TigerLaunch; incubated by BAE HQ and Breakthrough Founders Catalyst.</div>
+                <p class="card-desc">Fitness data platform + community brand, integrating wearable data and building real-world run club experiences.</p>
+                <ul class="card-list">
+                  <li>Led product development, partnerships with sports brands and cafés, and go-to-market to drive early user growth.</li>
+                </ul>
+              </div>
+              <div class="entry-polaroids">
+                <div class="entry-polaroid"><img src="assets/kendu1.png" alt="Kendu app, your body connected" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+                <div class="entry-polaroid"><img src="assets/kendu2.png" alt="Kendu hydration station, Puresport" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+                <div class="entry-polaroid"><img src="assets/kendu3.png" alt="Kendu run club, London" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="card card--experience">
-          <div class="map-pin" data-location="London"></div>
-          <div class="tape tape--top-left"></div>
-          <div class="card-inner">
-            <h3 class="card-title">Technical Project Management</h3>
-            <p class="card-meta">Amazon · May 2023 – Oct 2023 · 6 mos · Greater London</p>
-            <ul class="card-list">
-              <li>Worked with Amazon Redshift to extract large datasets from Grafana, Tableau; transformed and loaded data for analysis on QuickSight dashboards.</li>
-              <li>Developed a software solution with EU and NA teams automating manual data extraction and visualisation for KPI reporting — reduced manual efforts by 80%, improved data accuracy.</li>
-            </ul>
-            <p class="card-footer">LinkedIn helped me get this job.</p>
-          </div>
-        </article>
-        <article class="card card--experience">
-          <div class="map-pin" data-location="Glasgow"></div>
-          <div class="tape tape--top-right"></div>
-          <div class="card-inner">
-            <h3 class="card-title">Software Engineering</h3>
-            <p class="card-meta">J.P. Morgan · Apr 2023 · 1 mo · Glasgow</p>
-            <div class="sticky-note sticky-note--badge">1st place · Code for Good Hackathon 2023</div>
-            <ul class="card-list">
-              <li>Developed an app using Java and SQL to tackle sustainable actions within communities.</li>
-              <li>Features: user leaderboard quantifying sustainable actions; reward scheme with vouchers for highest contributor.</li>
-            </ul>
-          </div>
-        </article>
+          </article>
+          <article class="entry-card" data-entry>
+            <button type="button" class="entry-head" aria-expanded="false" aria-controls="entry-froppy-body">
+              <span class="map-pin entry-pin" data-location="Liverpool"></span>
+              <span class="entry-title">Building Froppy</span>
+              <span class="entry-meta">Dec 2024 – Jun 2025 · Liverpool</span>
+            </button>
+            <div id="entry-froppy-body" class="entry-body" aria-hidden="true">
+              <div class="entry-body-text">
+                <div class="tape tape--top-left"></div>
+                <p class="card-desc">Hosted Pilates events during my final year of Uni.</p>
+                <ul class="card-list">
+                  <li>Partnered with brands + cafés</li>
+                  <li>Partnered with Refugee Women + raised money</li>
+                  <li>Built a female community of 200+ people</li>
+                </ul>
+              </div>
+              <div class="entry-polaroids">
+                <div class="entry-polaroid"><img src="assets/froppy1.png" alt="Froppy fitness class" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+                <div class="entry-polaroid"><img src="assets/froppy2.png" alt="Froppy Pilates studio" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+                <div class="entry-polaroid"><img src="assets/froppy3.png" alt="Froppy community session" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </section>
 
-    <section id="projects" class="section projects">
-      <h2 class="section-title">projects</h2>
-      <div class="cards">
-        <article class="card card--project">
-          <div class="map-pin" data-location="Smart Mirror"></div>
-          <div class="tape tape--top-left"></div>
-          <div class="card-inner">
-            <h3 class="card-title">Smart Mirror</h3>
-            <p class="card-desc">Smart mirror that personalises the wellbeing experience through facial recognition. Real-time fitness insights and progress tracking — an everyday mirror as an intelligent, motivating wellness companion.</p>
-            <span class="card-tag">Fitness Hardware</span>
-          </div>
-        </article>
-        <article class="card card--project">
-          <div class="map-pin" data-location="Self-Driving Car"></div>
-          <div class="tape tape--top-right"></div>
-          <div class="card-inner">
-            <h3 class="card-title">Smart Self-Driving Car</h3>
-            <p class="card-desc">AI-powered miniature self-driving car: lane recognition, obstacle avoidance, real-time driving decisions. Integrated sensors and algorithms to simulate real-world vehicle behaviour.</p>
-            <span class="card-tag">Robotics</span>
-          </div>
-        </article>
-        <article class="card card--project">
-          <div class="map-pin" data-location="Semiconductors"></div>
-          <div class="tape tape--top-left"></div>
-          <div class="card-inner">
-            <h3 class="card-title">World of Semiconductors</h3>
-            <p class="card-desc">Modelled the electrical behaviour of high-k gate stacks (ultra-thin layers in microchips). Simulated software to analyse capacitance and oxide thickness — pushing the limits of semiconductor innovation.</p>
-            <span class="card-tag">Modelling & Simulation</span>
-          </div>
-        </article>
+      <div id="panel-hardware" class="category-panel" role="tabpanel" aria-labelledby="tab-hardware" hidden>
+        <div class="category-panel-header">
+          <h3 class="category-panel-title">Hardware</h3>
+          <button type="button" class="category-panel-back" aria-label="Back to categories">Back</button>
+        </div>
+        <div class="entry-list">
+          <article class="entry-card" data-entry>
+            <button type="button" class="entry-head" aria-expanded="false" aria-controls="entry-smartmirror-body">
+              <span class="map-pin entry-pin" data-location="Smart Mirror"></span>
+              <span class="entry-title">Smart Mirror</span>
+              <span class="entry-meta">Fitness Hardware</span>
+            </button>
+            <div id="entry-smartmirror-body" class="entry-body" aria-hidden="true">
+              <div class="entry-body-text">
+                <div class="tape tape--top-left"></div>
+                <p class="card-desc">Smart mirror that personalises the wellbeing experience through facial recognition. Real-time fitness insights and progress tracking, an everyday mirror as an intelligent, motivating wellness companion.</p>
+                <span class="card-tag">Fitness Hardware</span>
+              </div>
+              <div class="entry-polaroids">
+                <div class="entry-polaroid"><img src="assets/hardware-smartmirror1.png" alt="Smart mirror display, fitness summary" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+                <div class="entry-polaroid"><img src="assets/hardware-smartmirror2.png" alt="Smart mirror, face scan and Froppy" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+                <div class="entry-polaroid"><img src="assets/hardware-smartmirror3.png" alt="Smart mirror on table" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+              </div>
+            </div>
+          </article>
+          <article class="entry-card" data-entry>
+            <button type="button" class="entry-head" aria-expanded="false" aria-controls="entry-car-body">
+              <span class="map-pin entry-pin" data-location="Self-Driving Car"></span>
+              <span class="entry-title">Smart Self-Driving Car</span>
+              <span class="entry-meta">Robotics</span>
+            </button>
+            <div id="entry-car-body" class="entry-body" aria-hidden="true">
+              <div class="entry-body-text">
+                <div class="tape tape--top-right"></div>
+                <p class="card-desc">AI-powered miniature self-driving car: lane recognition, obstacle avoidance, real-time driving decisions. Integrated sensors and algorithms to simulate real-world vehicle behaviour.</p>
+                <span class="card-tag">Robotics</span>
+              </div>
+              <div class="entry-polaroids">
+                <div class="entry-polaroid"><img src="assets/car1.png" alt="Self-driving car model, front view" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+                <div class="entry-polaroid"><img src="assets/car2.png" alt="Self-driving car model, rear view" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+                <div class="entry-polaroid"><img src="assets/car3.png" alt="Self-driving car model, workshop" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </section>
 
-    <section id="education" class="section education">
-      <h2 class="section-title">education</h2>
-      <div class="card card--education">
-        <div class="map-pin" data-location="Liverpool"></div>
-        <div class="card-inner">
-          <h3 class="card-title">University of Liverpool</h3>
-          <p class="card-meta">Bachelor of Engineering (BEng), Electrical and Electronics Engineering</p>
+      <div id="panel-tech" class="category-panel" role="tabpanel" aria-labelledby="tab-tech" hidden>
+        <div class="category-panel-header">
+          <h3 class="category-panel-title">Tech</h3>
+          <button type="button" class="category-panel-back" aria-label="Back to categories">Back</button>
+        </div>
+        <div class="entry-list">
+          <article class="entry-card" data-entry>
+            <button type="button" class="entry-head" aria-expanded="false" aria-controls="entry-amazon-body">
+              <span class="map-pin entry-pin" data-location="London"></span>
+              <span class="entry-title">Technical Project Management · Amazon</span>
+              <span class="entry-meta">May 2023 – Oct 2023 · 6 mos · London</span>
+            </button>
+            <div id="entry-amazon-body" class="entry-body" aria-hidden="true">
+              <div class="entry-body-text">
+                <div class="tape tape--top-left"></div>
+                <ul class="card-list">
+                  <li>Worked with Amazon Redshift to extract large datasets from Grafana, Tableau; transformed and loaded data for analysis on QuickSight dashboards.</li>
+                  <li>Developed a software solution with EU and NA teams automating manual data extraction and visualisation for KPI reporting, reduced manual efforts by 80%, improved data accuracy.</li>
+                </ul>
+                <p class="card-footer">LinkedIn helped me get this job.</p>
+              </div>
+              <div class="entry-polaroids">
+                <div class="entry-polaroid"><img src="assets/amazon-volunteer.png" alt="Amazon volunteers, Clean the World Europe" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+              </div>
+            </div>
+          </article>
+          <article class="entry-card" data-entry>
+            <button type="button" class="entry-head" aria-expanded="false" aria-controls="entry-jpmorgan-body">
+              <span class="map-pin entry-pin" data-location="Glasgow"></span>
+              <span class="entry-title">Software Engineering · J.P. Morgan</span>
+              <span class="entry-meta">Apr 2023 · 1 mo · Code for Good 1st place</span>
+            </button>
+            <div id="entry-jpmorgan-body" class="entry-body" aria-hidden="true">
+              <div class="entry-body-text">
+                <div class="tape tape--top-right"></div>
+                <div class="sticky-note sticky-note--badge">1st place · Code for Good Hackathon 2023</div>
+                <ul class="card-list">
+                  <li>Developed an app using Java and SQL to tackle sustainable actions within communities.</li>
+                  <li>Features: user leaderboard quantifying sustainable actions; reward scheme with vouchers for highest contributor.</li>
+                </ul>
+              </div>
+              <div class="entry-polaroids">
+                <div class="entry-polaroid"><img src="assets/jpmorgan-code4good.png" alt="Code for Good 2023, J.P. Morgan team with Echo prizes" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+              </div>
+            </div>
+          </article>
+          <article class="entry-card" data-entry>
+            <button type="button" class="entry-head" aria-expanded="false" aria-controls="entry-semiconductors-body">
+              <span class="map-pin entry-pin" data-location="Semiconductors"></span>
+              <span class="entry-title">World of Semiconductors</span>
+              <span class="entry-meta">Modelling & Simulation</span>
+            </button>
+            <div id="entry-semiconductors-body" class="entry-body" aria-hidden="true">
+              <div class="entry-body-text">
+                <div class="tape tape--top-left"></div>
+                <p class="card-desc">Modelled the electrical behaviour of high-k gate stacks (ultra-thin layers in microchips). Simulated software to analyse capacitance and oxide thickness, pushing the limits of semiconductor innovation.</p>
+                <span class="card-tag">Modelling & Simulation</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div id="panel-education" class="category-panel" role="tabpanel" aria-labelledby="tab-education" hidden>
+        <div class="category-panel-header">
+          <h3 class="category-panel-title">Education</h3>
+          <button type="button" class="category-panel-back" aria-label="Back to categories">Back</button>
+        </div>
+        <div class="entry-list">
+          <article class="entry-card" data-entry>
+            <button type="button" class="entry-head" aria-expanded="false" aria-controls="entry-education-body">
+              <span class="map-pin entry-pin" data-location="Liverpool"></span>
+              <span class="entry-title">University of Liverpool</span>
+              <span class="entry-meta">BEng Electrical and Electronics Engineering</span>
+            </button>
+            <div id="entry-education-body" class="entry-body" aria-hidden="true">
+              <div class="entry-body-text">
+                <p class="card-desc">Bachelor of Engineering (BEng), Electrical and Electronics Engineering.</p>
+              </div>
+              <div class="entry-polaroids">
+                <div class="entry-polaroid"><img src="assets/liverpool-graduation.png" alt="Graduation, University of Liverpool" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -141,11 +299,16 @@
       <h2 class="section-title">thanks for peeking</h2>
       <div class="sticky-note sticky-note--contact">
         <span>Say hi!</span>
-        <a href="mailto:hello@example.com" class="contact-link">hello@example.com</a>
+        <a href="mailto:sumaiya2hossain@gmail.com" class="contact-link">sumaiya2hossain@gmail.com</a>
       </div>
-      <p class="contact-text">Let's connect — drop me a line or find me on LinkedIn.</p>
+      <p class="contact-text">Let's connect, drop me a line or find me on <a href="https://www.linkedin.com/in/sumaiya--hossain/" class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
     </section>
   </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Zoomed image">
+    <button type="button" class="lightbox-backdrop" aria-label="Close"></button>
+    <img class="lightbox-img" src="" alt="">
+  </div>
 
   <script src="main.js"></script>
 </body>
