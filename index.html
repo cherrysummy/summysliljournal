@@ -85,24 +85,31 @@
     </section>
 
     <section id="explore" class="section explore">
-      <h2 class="section-title">files</h2>
-      <p class="explore-intro">Click a category to open it, then click an item to read more.</p>
+      <h2 class="section-title section-title--script">Explore</h2>
+      <div class="explore-search-wrap">
+        <span class="explore-search-icon" aria-hidden="true">🔍</span>
+        <input type="search" class="explore-search" placeholder="Search" aria-label="Search categories">
+      </div>
       <div class="category-grid" role="tablist" aria-label="Portfolio categories">
         <button type="button" class="category-card category-card--fitness" data-category="fitness" role="tab" aria-selected="false" aria-controls="panel-fitness" id="tab-fitness">
-          <span class="category-card-icons" aria-hidden="true"></span>
-          <span class="category-card-label">Fitness + fun</span>
+          <span class="category-card-tab" aria-hidden="true"></span>
+          <span class="category-card-label">FITNESS + FUN</span>
         </button>
         <button type="button" class="category-card category-card--hardware" data-category="hardware" role="tab" aria-selected="false" aria-controls="panel-hardware" id="tab-hardware">
-          <span class="category-card-icons" aria-hidden="true"></span>
-          <span class="category-card-label">Hardware</span>
+          <span class="category-card-tab" aria-hidden="true"></span>
+          <span class="category-card-label">HARDWARE</span>
         </button>
         <button type="button" class="category-card category-card--tech" data-category="tech" role="tab" aria-selected="false" aria-controls="panel-tech" id="tab-tech">
-          <span class="category-card-icons" aria-hidden="true"></span>
-          <span class="category-card-label">Tech</span>
+          <span class="category-card-tab" aria-hidden="true"></span>
+          <span class="category-card-label">TECH</span>
         </button>
         <button type="button" class="category-card category-card--education" data-category="education" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education">
-          <span class="category-card-icons" aria-hidden="true"></span>
-          <span class="category-card-label">Education</span>
+          <span class="category-card-tab" aria-hidden="true"></span>
+          <span class="category-card-label">EDUCATION</span>
+        </button>
+        <button type="button" class="category-card category-card--social" data-category="social" role="tab" aria-selected="false" aria-controls="panel-social" id="tab-social">
+          <span class="category-card-tab" aria-hidden="true"></span>
+          <span class="category-card-label">SOCIAL MEDIA</span>
         </button>
       </div>
 
@@ -126,6 +133,7 @@
                 <ul class="card-list">
                   <li>Led product development, partnerships with sports brands and cafés, and go-to-market to drive early user growth.</li>
                 </ul>
+                <a href="https://www.kendu.co.uk/" class="contact-link card-link" target="_blank" rel="noopener noreferrer">kendu.co.uk →</a>
               </div>
               <div class="entry-polaroids">
                 <div class="entry-polaroid"><img src="assets/kendu1.png" alt="Kendu app, your body connected" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
@@ -291,6 +299,25 @@
               </div>
             </div>
           </article>
+        </div>
+      </div>
+
+      <div id="panel-social" class="category-panel" role="tabpanel" aria-labelledby="tab-social" hidden>
+        <div class="category-panel-header">
+          <h3 class="category-panel-title">Social media</h3>
+          <button type="button" class="category-panel-back" aria-label="Back to categories">Back</button>
+        </div>
+        <div class="social-panel-content">
+          <ul class="card-list">
+            <li>Grew Froppy's social media presence to support promotion of live fitness events and community engagement</li>
+            <li>Scaled Kendu's social media to ~300 followers in the first month, generating 11k profile views</li>
+            <li>Built a personal fitness content account, reaching 85k views on Instagram</li>
+          </ul>
+          <div class="entry-polaroids">
+            <div class="entry-polaroid"><img src="assets/social-kendu1.png" alt="Kendu Instagram, views insights" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+            <div class="entry-polaroid"><img src="assets/social-kendu2.png" alt="Kendu Instagram, top content" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+            <div class="entry-polaroid"><img src="assets/social-kendu3.png" alt="Kendu Instagram profile" loading="lazy"><div class="entry-polaroid-placeholder"><span>Your photo</span></div></div>
+          </div>
         </div>
       </div>
     </section>

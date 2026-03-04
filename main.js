@@ -73,6 +73,18 @@
     backBtn.addEventListener('click', showCategories);
   });
 
+  var exploreSearch = document.querySelector('.explore-search');
+  if (exploreSearch && categoryCards.length) {
+    exploreSearch.addEventListener('input', function () {
+      var q = this.value.trim().toLowerCase();
+      categoryCards.forEach(function (btn) {
+        var label = (btn.querySelector('.category-card-label') || {}).textContent || '';
+        var match = !q || label.trim().toLowerCase().indexOf(q) !== -1;
+        btn.style.display = match ? '' : 'none';
+      });
+    });
+  }
+
   // About cards: click picture to open lightbox; click backdrop to close
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = lightbox && lightbox.querySelector('.lightbox-img');
