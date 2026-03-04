@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summy's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="map-pin map-pin--hero" data-location="Summy" aria-hidden="true"></div>
+      <h1 class="hero-title">PORTFOLIO</h1>
+      <p class="hero-subtitle">Sumaiya Hossain</p>
+      <div class="sticky-note sticky-note--hero">
+        <span>Call me Summy!</span>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2 class="section-title">who i am</h2>
+      <div class="about-content">
+        <p class="about-intro">Hi, I'm <strong>Sumaiya</strong> — call me <strong>Summy</strong>! I grew up in Portugal and moved to the UK. I love building things that mix hardware, software, community, and a bit of mischief.</p>
+        <div class="about-stickies">
+          <div class="sticky-note sticky-note--small" data-note="Portugal">Portugal</div>
+          <div class="sticky-note sticky-note--small" data-note="UK">UK</div>
+          <div class="sticky-note sticky-note--small" data-note="Engineering & fun">Engineering & fun</div>
+        </div>
+      </div>
+      <div class="map-pin" data-location="Portugal"></div>
+      <div class="map-pin map-pin--uk" data-location="UK"></div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <h2 class="section-title">experience</h2>
+      <div class="cards">
+        <article class="card card--experience">
+          <div class="map-pin" data-location="Liverpool"></div>
+          <div class="tape tape--top-right"></div>
+          <div class="card-inner">
+            <h3 class="card-title">Building Froppy</h3>
+            <p class="card-meta">Dec 2024 – Jun 2025 · 7 mos · Liverpool</p>
+            <p class="card-desc">Hosted Pilates events during my final year of Uni.</p>
+            <ul class="card-list">
+              <li>Partnered with brands + cafés</li>
+              <li>Partnered with Refugee Women + raised money</li>
+              <li>Built a female community of 200+ people</li>
+            </ul>
+            <div class="sticky-note sticky-note--inline">Kendu fitness app — little side quest</div>
+            <div class="card-photo polaroid">
+              <img src="assets/IMG_6830.jpeg" alt="Froppy Pilates community" loading="lazy">
+            </div>
+          </div>
+        </article>
+        <article class="card card--experience">
+          <div class="map-pin" data-location="London"></div>
+          <div class="tape tape--top-left"></div>
+          <div class="card-inner">
+            <h3 class="card-title">Technical Project Management</h3>
+            <p class="card-meta">Amazon · May 2023 – Oct 2023 · 6 mos · Greater London</p>
+            <ul class="card-list">
+              <li>Worked with Amazon Redshift to extract large datasets from Grafana, Tableau; transformed and loaded data for analysis on QuickSight dashboards.</li>
+              <li>Developed a software solution with EU and NA teams automating manual data extraction and visualisation for KPI reporting — reduced manual efforts by 80%, improved data accuracy.</li>
+            </ul>
+            <p class="card-footer">LinkedIn helped me get this job.</p>
+          </div>
+        </article>
+        <article class="card card--experience">
+          <div class="map-pin" data-location="Glasgow"></div>
+          <div class="tape tape--top-right"></div>
+          <div class="card-inner">
+            <h3 class="card-title">Software Engineering</h3>
+            <p class="card-meta">J.P. Morgan · Apr 2023 · 1 mo · Glasgow</p>
+            <div class="sticky-note sticky-note--badge">1st place · Code for Good Hackathon 2023</div>
+            <ul class="card-list">
+              <li>Developed an app using Java and SQL to tackle sustainable actions within communities.</li>
+              <li>Features: user leaderboard quantifying sustainable actions; reward scheme with vouchers for highest contributor.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2 class="section-title">projects</h2>
+      <div class="cards">
+        <article class="card card--project">
+          <div class="map-pin" data-location="Smart Mirror"></div>
+          <div class="tape tape--top-left"></div>
+          <div class="card-inner">
+            <h3 class="card-title">Smart Mirror</h3>
+            <p class="card-desc">Smart mirror that personalises the wellbeing experience through facial recognition. Real-time fitness insights and progress tracking — an everyday mirror as an intelligent, motivating wellness companion.</p>
+            <span class="card-tag">Fitness Hardware</span>
+          </div>
+        </article>
+        <article class="card card--project">
+          <div class="map-pin" data-location="Self-Driving Car"></div>
+          <div class="tape tape--top-right"></div>
+          <div class="card-inner">
+            <h3 class="card-title">Smart Self-Driving Car</h3>
+            <p class="card-desc">AI-powered miniature self-driving car: lane recognition, obstacle avoidance, real-time driving decisions. Integrated sensors and algorithms to simulate real-world vehicle behaviour.</p>
+            <span class="card-tag">Robotics</span>
+          </div>
+        </article>
+        <article class="card card--project">
+          <div class="map-pin" data-location="Semiconductors"></div>
+          <div class="tape tape--top-left"></div>
+          <div class="card-inner">
+            <h3 class="card-title">World of Semiconductors</h3>
+            <p class="card-desc">Modelled the electrical behaviour of high-k gate stacks (ultra-thin layers in microchips). Simulated software to analyse capacitance and oxide thickness — pushing the limits of semiconductor innovation.</p>
+            <span class="card-tag">Modelling & Simulation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section education">
+      <h2 class="section-title">education</h2>
+      <div class="card card--education">
+        <div class="map-pin" data-location="Liverpool"></div>
+        <div class="card-inner">
+          <h3 class="card-title">University of Liverpool</h3>
+          <p class="card-meta">Bachelor of Engineering (BEng), Electrical and Electronics Engineering</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 class="section-title">thanks for peeking</h2>
+      <div class="sticky-note sticky-note--contact">
+        <span>Say hi!</span>
+        <a href="mailto:hello@example.com" class="contact-link">hello@example.com</a>
+      </div>
+      <p class="contact-text">Let's connect — drop me a line or find me on LinkedIn.</p>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

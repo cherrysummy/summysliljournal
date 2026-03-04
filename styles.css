@@ -1,0 +1,414 @@
+/* --- Design system --- */
+:root {
+  --color-bg: #F9F7EF;
+  --color-cream: #F9F7EF;
+  --color-accent: #7EC8E3;
+  --color-text: #1a1a1a;
+  --color-text-muted: #444;
+  --color-white: #ffffff;
+  --color-sticky: #fef9c3;
+  --color-sticky-alt: #e0f2fe;
+  --color-tape: rgba(255, 255, 255, 0.7);
+  --font-display: 'Caveat', cursive;
+  --font-body: 'DM Sans', sans-serif;
+  --shadow-soft: 2px 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lift: 4px 6px 16px rgba(0, 0, 0, 0.12);
+  --radius: 4px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+/* --- Nav --- */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius);
+}
+
+.nav-link:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+/* --- Sections --- */
+.section {
+  padding: 5rem 1.5rem 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  margin: 0 0 2rem;
+  color: var(--color-text);
+}
+
+/* --- Hero --- */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding-top: 6rem;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 12vw, 6rem);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin: 0.5rem 0 1.5rem;
+  color: var(--color-text-muted);
+}
+
+/* --- Sticky notes --- */
+.sticky-note {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-sticky);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-soft);
+  transform: rotate(-2deg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sticky-note:hover {
+  transform: rotate(0deg) translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+.sticky-note--hero {
+  font-size: 1.5rem;
+}
+
+.sticky-note--small {
+  padding: 0.5rem 0.9rem;
+  font-size: 1.1rem;
+}
+
+.sticky-note--inline {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+}
+
+.sticky-note--badge {
+  background: var(--color-sticky-alt);
+  margin-bottom: 0.5rem;
+}
+
+.sticky-note--contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sticky-note--contact .contact-link {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+/* --- Map pins --- */
+.map-pin {
+  width: 28px;
+  height: 36px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 32'%3E%3Cpath fill='%231a1a1a' d='M12 0C7.58 0 4 3.58 4 8c0 6 8 14 8 14s8-8 8-14c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z'/%3E%3Ccircle cx='12' cy='8' r='2.5' fill='%237EC8E3'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: default;
+  transition: transform 0.2s ease;
+  position: absolute;
+}
+
+.map-pin:hover {
+  animation: wobble 0.4s ease;
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-8deg); }
+  75% { transform: rotate(8deg); }
+}
+
+.map-pin--hero {
+  top: 6rem;
+  right: 15%;
+}
+
+.map-pin--uk {
+  right: 20%;
+  top: 50%;
+}
+
+/* --- About --- */
+.about {
+  position: relative;
+}
+
+.about .map-pin {
+  top: 8rem;
+  left: 10%;
+}
+
+.about .map-pin--uk {
+  top: 12rem;
+  left: auto;
+  right: 15%;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  max-width: 42ch;
+  margin-bottom: 1.5rem;
+}
+
+.about-stickies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* --- Cards (Experience / Projects / Education) --- */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.card {
+  position: relative;
+  background: var(--color-white);
+  padding: 1.75rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lift);
+}
+
+.card-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.card .map-pin {
+  top: -8px;
+  right: 1rem;
+  z-index: 2;
+}
+
+.card-title {
+  font-size: 1.35rem;
+  margin: 0 0 0.35rem;
+}
+
+.card-meta {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0 0 0.75rem;
+}
+
+.card-desc {
+  margin: 0 0 0.75rem;
+}
+
+.card-list {
+  margin: 0 0 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.card-list li {
+  margin-bottom: 0.35rem;
+}
+
+.card-footer {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0.75rem 0 0;
+  font-style: italic;
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.6rem;
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-radius: 999px;
+  margin-top: 0.5rem;
+}
+
+/* --- Tape --- */
+.tape {
+  position: absolute;
+  width: 60px;
+  height: 18px;
+  background: var(--color-tape);
+  opacity: 0.9;
+  z-index: 2;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tape--top-right {
+  top: 12px;
+  right: 24px;
+  transform: rotate(25deg);
+}
+
+.tape--top-left {
+  top: 12px;
+  left: 24px;
+  transform: rotate(-25deg);
+}
+
+/* --- Polaroid photo --- */
+.polaroid {
+  margin-top: 1rem;
+  padding: 0.5rem 0.5rem 2rem;
+  background: var(--color-white);
+  box-shadow: var(--shadow-soft);
+  transform: rotate(2deg);
+  max-width: 220px;
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1;
+  object-fit: cover;
+  min-height: 180px;
+  background: var(--color-cream);
+}
+
+/* --- Education --- */
+.card--education .map-pin {
+  top: -8px;
+  right: 1rem;
+}
+
+/* --- Contact --- */
+.contact {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.contact-text {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Torn paper effect (optional junk journal detail) */
+.card--experience:first-of-type {
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 98% 100%, 0 100%, 0 0);
+}
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .hero {
+    min-height: 60vh;
+    padding-top: 5rem;
+  }
+
+  .map-pin--hero {
+    right: 8%;
+  }
+
+  .about .map-pin,
+  .about .map-pin--uk {
+    display: none;
+  }
+
+  .sticky-note {
+    transform: rotate(-1deg);
+  }
+
+  .card .map-pin {
+    right: 0.5rem;
+  }
+
+  .tape {
+    width: 48px;
+    height: 14px;
+  }
+
+  .tape--top-right {
+    right: 12px;
+  }
+
+  .tape--top-left {
+    left: 12px;
+  }
+}
